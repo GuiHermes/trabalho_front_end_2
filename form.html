@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="icon" href="../assets/icons/logoIcon.png">
+</head>
+
+<body>
+    <main>
+        <h1>Formulário de Cadastro</h1>
+        <form id="registro" class="form" novalidate>
+
+            <div class="campo-formulario">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" />
+                <small></small>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="sobrenome">Sobrenome</label>
+                <input id="sobrenome" name="sobrenome" type="text" />
+                <small></small>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" />
+                <small></small>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="idade">Idade</label>
+                <input id="idade" name="idade" type="number" min="1" max="120" />
+                <small></small>
+            </div>
+
+            <div class="campo-formulario">
+                <input class="btn" type="submit" value="Enviar">
+            </div>
+        </form>
+    </main> 
+    <script src="assets/js/form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+:root {
+  --cor1: #00000000; 
+  --cor2: #174b86;
+  --painel: rgba(0, 0, 0, 0.3);
+  --txt: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--cor1), var(--cor2));
+  color: var(--txt);
+  display: flex;
+  flex-direction: column;
+}
+
+/* cabeçalho */
+header {
+  text-align: center;
+  padding: 30px 10px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* conteúdo principal */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.apresentacao {
+  background: var(--painel);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.apresentacao h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.apresentacao h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.apresentacao p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.apresentacao h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* botão de navegação */
+.btn {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.btn a {
+  display: inline-block;
+  background: var(--cor1);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn a:hover {
+  background: var(--cor2);
+  transform: scale(1.05);
+}
